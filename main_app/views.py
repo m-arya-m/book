@@ -23,3 +23,18 @@ class BookCreatListView(APIView):
             serializer.save(user=request.user)
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class BookDetailView(APIView):
+
+    def get_object(self, pk):
+        return get_object_or_404(Book, pk=pk)
+    
+    def get (self, request,pk):
+        book = self.get_object(pk)
+        serializer = BookSerializer(book)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def delete (self, request, pk):
+        book = self.get_object(pk)
+        book.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
