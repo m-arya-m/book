@@ -9,8 +9,6 @@ class Book(models.Model):
     publishedDate = models.DateField('Published Date')
     numberOfPages = models.IntegerField ()
 
-    user = models. ForeignKey(User,on_delete=models. CASCADE)
-
 
     def __str__(self):
         
