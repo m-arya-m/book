@@ -14,7 +14,7 @@ My Book Management App is a solo project that reflects the skills I gained and l
 ## Tech stack used in the Frontend
 - React
 - JavaScrept
-- css
+
 
 
 ## RESTful Routing Table for both Client and Server for the Backend
@@ -48,7 +48,7 @@ My Book Management App is a solo project that reflects the skills I gained and l
    Open your terminal and run the following command to clone the backend repository:
 
    ```
-   git clone https://git.generalassemb.ly/maryam00/my_study_backend.git
+   git clone https://github.com/m-arya-m/book.git
    ```
 
 ### 2. Navigate to the Backend Directory
