@@ -3,38 +3,45 @@
 ## Project Description
 My Book Management App is a solo project that reflects the skills I gained and learned during my universite study and in the SDA (Saudi Digital Academy) Bootcamp. It is a full-stack application designed to help users organize all their Books in one place.
 
-## Tech stack
-The backend was developed using 
+## Tech stack used in the Backend
 - Django
 - Python
 - PostgreSQL
 - psycopg2 
 - djangorestframework 
 - django-cors-headers 
-The Frontend was developed using 
+
+## Tech stack used in the Frontend
+- React
+- JavaScrept
+- css
 
 
-## RESTful Routing Table for both Client and Server
+## RESTful Routing Table for both Client and Server for the Backend
 
 
 | Method | Url | discription |
 | ------ | ------ |----------------------|
-| GET | /subjects| fetch and display all subject |
-| POST | /subjects/new | creat new subject |
-| DELETE | /subjects/:id| Send a request to delete a subject |
-| PUT/PATCH |  /subjects/:id | Send updated data for a specific subject |
-| GET | /subjects/:id/notes | fetch and display all notes of a subject |
-| POST | /subjects/:id/notes | creat new note |
-| GET | /subjects/:id/notes/:id | fetch and display one note |
-| DELETE |  /subjects/:id/notes/:id| Send a request to delete a note |
-| PUT/PATCH |  /subjects/:id/notes/:id | Updated data for a specific note |
-| GET | /subjects/:id/tasks | fetch and display all tasks of a subject |
-| POST | /subjects/:id/tasks | creat new task |
-| PUT/PATCH | /subjects/:id /tasks/:id | Updated data for a specific task |
-| DELETE |  /subjects/:id/tasks/:id| Send a request to delete a task |
+| GET | /Books| fetch and display all Books |
+| POST | /Books/new | creat new Book |
+| DELETE | /Books/:id| Send a request to delete a Book |
+| PUT/PATCH |  /Books/:id | Send updated data for a specific Book |
+
+## RESTful Routing Table for both Client and Server for the Frontend
+
+| Method | Url | discription |
+| ------ | ------ |----------------------|
+| GET | /signup| Fetch and display the signup form |
+| POST | /signup| Submit signup data to create a new account |
+| GET | /login| Fetch and display the login form |
+| POST | /login| Submit login credentials for authentication|
+| GET | /| fetch and display all Books |
+| POST | /books/new | creat new books |
+| DELETE | /books/:id/| Send a request to delete a book |
+| PUT/PATCH |  /books/:id/edit/ | Send updated data for a specific book |
 
 
-## Installation Instructions
+## Installation Instructions for the Backend
 
 ### 1. Clone the Backend Repository
 
@@ -46,10 +53,10 @@ The Frontend was developed using
 
 ### 2. Navigate to the Backend Directory
 
-   Change into the backend project directory:
+   Change into the book management project directory:
 
    ```
-   cd my_study_backend
+   cd book_management
    ```
 
 ### 3. Create a Virtual Environment (optional but recommended)
@@ -80,7 +87,22 @@ python manage.py migrate
    ```
    python manage.py runserver
    ```
+## Installation Instructions for the frontend
+Follow these steps to get the Notebook App up and running on your local machine:
 
+### 1. Install Dependencies
+```
+npm install
+```
+### 2. Start the Development Server
+```
+npm start
+```
+
+### 3. Open the Application in Your Browser
+
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
 ## IceBox Features
-- testing the functions more
+- Add book rating feature
+- Add a book description
